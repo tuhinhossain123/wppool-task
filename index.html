@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooppl</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bbb8edd23b.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+   
+    <header class="bg-black">
+        <nav class="px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img src="/images/logo.png" alt="" class="w-18">
+                </div>
+                <div class="felx flex-col">
+                    <div class="flex items-center gap-5">
+                        <button class="text border-2 text-white px-4 py-3 text-2xl rounded-full hidden md:block"><i class="fa-solid fa-share-nodes"></i></button>
+                        <button class="border border-2 rounded-full p-4 text-white mr-4 hidden md:block">download the 2023 Report</button>
+                        <button onclick="onToggleMenu(this)" name="menu"><i class="fa-solid fa-bars text-white text-4xl "></i></button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="menu ">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Products</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Solution</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Resource</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Developers</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+
+                <button onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer">click</button>
+               
+            </div>
+    </header>
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+
+
+
+    <!-- js script  -->
+
+
+
+
+</body>
+
+</html>
