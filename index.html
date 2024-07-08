@@ -11,71 +11,507 @@
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/bbb8edd23b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 
 </head>
 
-<body>
-   
-    <header class="bg-black">
-        <nav class="px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div>
-                    <img src="/images/logo.png" alt="" class="w-18">
+<body class="bg-[#F5F5F5] ">
+    <header class="text-white bg-[#2042B6]  ">
+        <!-- nav Section -->
+        <nav class="flex items-center justify-between py-4 px-6 md:px-16">
+            <div>
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+            <div id="menu-container" class="flex items-center gap-6">
+                <div class="hidden md:block">
+                    <button class="h-14 w-14 p-2 border rounded-full text-2xl"><i
+                            class="fa-solid fa-share-nodes"></i></button>
                 </div>
-                <div class="felx flex-col">
-                    <div class="flex items-center gap-5">
-                        <button class="text border-2 text-white px-4 py-3 text-2xl rounded-full hidden md:block"><i class="fa-solid fa-share-nodes"></i></button>
-                        <button class="border border-2 rounded-full p-4 text-white mr-4 hidden md:block">download the 2023 Report</button>
-                        <button onclick="onToggleMenu(this)" name="menu"><i class="fa-solid fa-bars text-white text-4xl "></i></button>
+                <div class="hidden md:block">
+                    <button id="download-report" class="px-4 py-2 border rounded-full">Download the 2024 Report</button>
+                </div>
+                <div>
+                    <button id="menu-toggle" class="text-4xl"><i class="fa-solid fa-bars"></i></button>
+                    <div id="menu-items-parent"
+                        class="menu-items hidden absolute top-12 md:top-[3.5rem] right-0 border border-black bg-white w-full ">
+                        <ul class="w-[20%]">
+                            <li><a href="#">Items-1</a></li>
+                            <li><a href="#">Items-1</a></li>
+                            <li><a href="#">Items-1</a></li>
+                            <li><a href="#">Items-1</a></li>
+                            <li><a href="#">Items-1</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div
-                class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="menu ">
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Products</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Solution</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Resource</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Developers</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-gray-500" href="#">Pricing</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
+        </nav>
 
-                <button onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer">click</button>
-               
+
+        <!-- Bnnar Section -->
+
+        <div class="flex flex-col lg:flex-row h-screen relative">
+            <div
+                class="grid grid-cols-2 md:grid-cols-1 gap-6 lg:gap-0 lg:space-y-8 pt-10 md:pt-16 lg:pt-24 pl-12 pb-8 lg:pb-16">
+                <div>
+                    <h2 class="text-4xl font-normal pb-1">60</h2>
+                    <h3 class="text-lg text-[#CDCDCD]">Companies</h3>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-normal pb-1">$100B</h2>
+                    <h3 class="text-lg text-[#CDCDCD]">Market cap</h3>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-normal pb-1">3.5X</h2>
+                    <h3 class="text-lg text-[#CDCDCD]">Revenue multiple</h3>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-normal pb-1">60%</h2>
+                    <h3 class="text-lg text-[#CDCDCD]">LTM avg. revenue growth rate</h3>
+                </div>
             </div>
+            <div class="px-6 md:px-10 lg:px-0">
+                <h1 class="text-center text-4xl md:text-6xl lg:text-7xl font-normal font-[foppins]   lg:pt-56 pb-4">The
+                    WPPOOL Index</h1>
+                <h3 class="text-xl font-normal text-center text-justify ">Monitor the performance of emerging, publicly
+                    traded, financial
+                    technology companies.Monitor the performance of emerging, publicly traded, financial
+                    technology companies</h3>
+            </div>
+        </div>
+        <!-- <div class="absolute ml-[50rem]  bottom-0">
+            <button
+                class="bg-white text-[#2042B6] h-16 w-16 p-3 text-normal text-2xl rounded-full shadow-2xl 2xl shadow-gray-500">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button> -->
+        </div>
     </header>
 
 
+    <!-- The WPPOOL Index Section -->
+    <section class="mt-16 px-16 py-10 bg-[#FFFFFF]">
+        <div class="flex gap-6">
+            <div class="w-[20%] mx-auto bg-[#EFF3F6] rounded-xl p-4 space-y-6">
+                <div class="bg-[#2042B6] text-white text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                    <h2>The Index</h2>
+                    <span>-</span>
+                </div>
+                <div class="text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                    <h2>The Index Tab Tow</h2>
+                    <span>+</span>
+                </div>
+                <div class="text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                    <h2>The Index Tab Three</h2>
+                    <span>+</span>
+                </div>
+                <div class=" text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                    <h2>The Index Tab Four</h2>
+                    <span>+</span>
+                </div>
+                <div class="text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                    <h2>The Index Tab Five</h2>
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="w-[80%] mx-auto">
+                <div class="flex items-center gap-2">
+                    <div class="w-12 h-10">
+                        <img src="./images/The-index-img/Union.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl md:text-4xl font-[foppins]">The WPPOOL Index</h2>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-4">
+                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                        <h2 class="text-[#FC714D] text-3xl">+66.2%</h2>
+                        <div class="flex  lg:gap-2">
+                            <h3 class="text-[#191618] text-lg">WPPOOL</h3>
+                            <hr class="w-1 h-14 lg:h-8 bg-[#FC714D]">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                        <h2 class="text-[#615DE3] text-3xl">+26.6%</h2>
+                        <div class="flex  lg:gap-2">
+                            <h3 class="text-[#191618] text-lg">Goolge</h3>
+                            <hr class="w-1 h-14 lg:h-8 bg-[#615DE3]">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                        <h2 class="text-[#7CA63A] text-3xl">+31.1%</h2>
+                        <div class="flex items-center gap-2 lg:gap-2">
+                            <h3 class="text-[#191618] text-lg">Microsoft</h3>
+                            <hr class="w-1 h-14 lg:h-8 bg-[#7CA63A]">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                        <h2 class="text-[#6F34A1] text-3xl">+17%</h2>
+                        <div class="flex items-center gap-1 lg:gap-2">
+                            <h3 class="text-[#191618] text-lg">Twitter Index</h3>
+                            <hr class="w-1 h-14 lg:h-8 bg-[#6F34A1]">
+                        </div>
+                    </div>
+                </div>
 
-    <script>
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[9%]')
-        }
-    </script>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-96 pt-8 md:pt-5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div
+                            class="bg-[#2042B6] text-white text-lg flex justify-between gap-24 items-center px-4 py-2 rounded-full">
+                            <h2>Sectors</h2>
+                            <span><i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                        <div
+                            class="bg-[#2042B6] text-white text-lg flex justify-between gap-24 items-center px-4 py-2 rounded-full">
+                            <h2 class="text-sm">Types of IPO</h2>
+                            <span><i class="fa-solid fa-caret-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="  gap-5  bg-[#EFF3F6] rounded-full mt-3 md:mt-0 py-2">
+                        <h2 class="text-[#748DA1]">1Y</h2>
+                        <h2 class="text-[#748DA1]">YTD</h2>
+                        <h2 class="bg-[#2042B6] p-3 text-white rounded-full">6M</h2>
+                        <h2 class="text-[#748DA1]">1M</h2>
+                        <h2 class="text-[#748DA1]">1W</h2>
+                    </div>
+                </div>
+                <div class="pt-6">
+                    <img src="./images/The-index-img/Frame 127.png" alt="" class="w-full h-full">
+                </div>
+                <div class="  gap-16 pt-6">
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
+                            <h2 class="border border-2 outline-none  bg-[#FC714D] w-4 h-4"></h2>
+                            <h2>WPPOOL</h2>
+                        </div>
+                        <div class="flex items-center gap-2 ">
+                            <h2 class="border border-2 outline-none  bg-[#615DE3] w-4 h-4"></h2>
+                            <h2>Google</h2>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
+                            <h2 class="border border-2 outline-none  bg-[#AFCD80] w-4 h-4"></h2>
+                            <h2>Microsoft</h2>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="border border-2 outline-none  bg-[#6F34A1] w-4 h-4"></h2>
+                            <h2>Twitter</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Potential Future Listings Section -->
+    <section class="px-5 md:px-10 lg:px-16 mt-36">
+        <div>
+            <h2 class="text-5xl font-normal font-[foppins] pb-5">Potential Future Listings</h2>
+            <p class="text-[#191618]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                libero et velit interdum, ac aliquet odio mattis.<br> Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos. </p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-8 pt-7">
+                <div class="bg-white py-5  w-full h-full rounded-md-md flex justify-center justify-center">
+                    <img src="./images/potential-feature/Group 227.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5 w-full h-full rounded-md flex justify-center justify-center">
+                    <img src="./images/potential-feature/Group 219.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5 w-full h-full rounded-md flex justify-center justify-center">
+                    <img src="./images/potential-feature/Group 220.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5 w-full h-full rounded-md flex justify-center justify-center">
+                    <img src="./images/potential-feature/Group 221.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5 w-full h-full rounded-md flex justify-center justify-center">
+                    <img src="./images/potential-feature/Group 222.png" alt="" class="w-[6rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5 w-full h-full rounded-md flex justify-center justify-center">
+                    <img src="./images/potential-feature/Group 226.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5 w-full h-full rounded-md flex justify-center justify-center">
+                    <img src="./images/potential-feature/Group 223.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5 w-full h-full rounded-md flex justify-center">
+                    <img src="./images/potential-feature/Group 223.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white  py-5 w-full h-full rounded-md flex justify-center">
+                    <img src="./images/potential-feature/Group 225.png" alt="" class="w-[8rem] h-[3rem]">
+                </div>
+                <div class="bg-white py-5  w-full h-full rounded-md  ">
+                    <img src="./images/potential-feature/Group.png" alt="" class="w-[6rem] h-[3rem]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- State of USA Section -->
+    <section class="px-16 mt-36">
+        <div>
+            <h2 class="text-5xl font-normal font-[foppins] pb-5">State of USA</h2>
+            <button class="flex items-center bg-[#2042B6] rounded-full px-6 py-3 gap-10">
+                <span class="text-5xl font-normal text-white font-[foppins]">2024</span>
+                </span> <i class="fa-solid fa-caret-down text-white  text-xl"></i>
+            </button>
+            <h2 class="pt-4 text-lg text-normal">Click through the slides or download the report to view natively on
+                your device.</h2>
+        </div>
+        <div class=" flex items-center justify-center pt-5">
+            <div class="w-full h-full">
+                <div id="slider" class="overflow-hidden w-full h-full rounded-lg">
+                    <div class="flex transition-transform duration-500">
+                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rgegdg (1).png"
+                                alt="Slide 1"></div>
+                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rhrdgd.png"
+                                alt="Slide 2"></div>
+                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rgegdg (1).png"
+                                alt="Slide 1"></div>
+                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rhrdgd.png"
+                                alt="Slide 2"></div>
+
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-x-[470px]">
+                    <div class="flex items-center pt-5 gap-10">
+                        <div class="flex items-center gap-5">
+                            <button id="prevBtn"
+                                class="bg-white text-[#2042B6] h-16 w-16 p-3 text-normal text-2xl rounded-full shadow-2xl 2xl shadow-gray-500">
+                                <i class="fa-solid fa-arrow-left-long"></i>
+                            </button>
+                            <button id="nextBtn"
+                                class="bg-white text-[#2042B6] h-16 w-16 p-3 text-normal text-2xl rounded-full shadow-2xl 2xl shadow-gray-500">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <h2 class="text-lg font-normal">Pages</h2>
+                            <button id="pageCount"
+                                class="text-black bg-white w-[131px] h-[56px] text-center text-lg shadow-2xl shadow-gray-500 rounded-full px-3 py-2">
+                                <span> 1 / 4</span> <span><i
+                                        class="fa-solid fa-caret-down text-[#2042B6] text-5xl"></i></span>
+                            </button>
+                            <h2 class="text-lg font-normal">of 37</h2>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button id="download-report"
+                            class="px-5 py-5 border-none bg-[#2042B6] text-white shadow-2xl shadow-gray-500 rounded-full">Download
+                            the 2024 Report</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Stories & Ideas Section -->
+    <section class="mt-48">
+        <div class="px-5 md:px-10 lg:px-16">
+            <h2 class="text-5xl font-normal font-[foppins] pb-5">State of USA</h2>
+            <p class="text-[#191618] text-xl pb-12">The latest news and updates</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-[46px]">
+                <div class="">
+                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
+                        <div class="w-32 h-32 rounded-full">
+                            <img src="/images/story-ide/image 97.png" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-white  pt-20 px-7 pb-5 pointer   rounded-lg">
+                        <h2 class="pb-2 text-[#2042B6]">By: Sahabuddin Sagor</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.Lorem
+                            ipsum dolor sit amet consectetur.</p>
+                        <button class="btn bg-[#2042B6] px-4 py-2 rounded-full text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="pt-10 md:pt-0">
+                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
+                        <div class="w-32 h-32 rounded-full">
+                            <img src="/images/story-ide/image 98.png" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-white  pt-20 px-7 pb-5 pointer   rounded-lg">
+                        <h2 class="pb-2 text-[#2042B6]">By: Nayem Khan</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.Lorem
+                            ipsum dolor sit amet consectetur.</p>
+                        <button class="btn bg-[#2042B6] px-4 py-2 rounded-full text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="pt-10 md:pt-0">
+                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
+                        <div class="w-32 h-32 rounded-full">
+                            <img src="/images/story-ide/image 97.png" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-white  pt-20 px-7 pb-5 pointer   rounded-lg">
+                        <h2 class="pb-2 text-[#2042B6]">By: Sahabuddin Sagor</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.Lorem
+                            ipsum dolor sit amet consectetur.</p>
+                        <button class="btn bg-[#2042B6] px-4 py-2 rounded-full text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="pt-10">
+                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
+                        <div class="w-32 h-32 rounded-full">
+                            <img src="/images/story-ide/image 98.png" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-white  pt-20 px-7 pb-5 pointer   rounded-lg">
+                        <h2 class="pb-2 text-[#2042B6]">By: Nayem Khan</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.Lorem
+                            ipsum dolor sit amet consectetur.</p>
+                        <button class="btn bg-[#2042B6] px-4 py-2 rounded-full text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="pt-10">
+                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
+                        <div class="w-32 h-32 rounded-full">
+                            <img src="/images/story-ide/image 97.png" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-white  pt-20 px-7 pb-5 pointer   rounded-lg">
+                        <h2 class="pb-2 text-[#2042B6]">By: Sahabuddin Sagor</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.Lorem
+                            ipsum dolor sit amet consectetur.</p>
+                        <button class="btn bg-[#2042B6] px-4 py-2 rounded-full text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="pt-10">
+                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
+                        <div class="w-32 h-32 rounded-full">
+                            <img src="/images/story-ide/image 98.png" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-white  pt-20 px-7 pb-25 pointer   rounded-lg">
+                        <h2 class="pb-2 text-[#2042B6]">By: Nayem Khan</h2>
+                        <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.Lorem
+                            ipsum dolor sit amet consectetur.</p>
+                        <button class="btn bg-[#2042B6] px-4 py-2 rounded-full text-white">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- hr -->
+    <hr class="mt-24 mb-24 mb-10 w-[93%] h-[0.2rem] mx-auto text-5xl bg-[#90B8F0] ">
+
+
+    <!-- About WPPOOL Dection -->
+
+    <section class="px-16">
+        <div class="flex justify-between items-center bg-white w-full h-full rounded-md shadow-lg">
+            <div class="pt-10 pl-10 pb-10">
+                <h2 class="text-5xl text-[#191618] font-[foppins] pb-5">
+                    About WPPOOL
+                </h2>
+                <h3 class="text-3xl text-[#7D7F81] pb-4">Investing in wppool for over 50 years</h3>
+                <p class="pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas
+                    vel sint
+                    commodi repudiandae consequuntur <br> voluptatum laborum numquam blanditiis harum quisquam eius sed
+                    odit
+                    fugiat iusto fuga praesentium optio, eaque rerum! Provident <br> similique accusantium nemo autem.
+                </p>
+                <button class="btn bg-[#2042B6] px-4 py-3 rounded-full text-white">Contact WPPOOL</button>
+            </div>
+            <div>
+                <img src="./images/Mask group.svg" alt="" class="w-full h-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- hr  -->
+    <hr class="mt-24 mb-24 mb-10 w-[93%] h-[0.2rem] mx-auto text-5xl bg-[#90B8F0] ">
+
+
+    <!-- Selected WPPOOL Portfolio Companies Section -->
+    <section class="px-16">
+
+        <h2 class="text-5xl font-normal font-[foppins] pb-5">Selected WPPOOL Portfolio Companies</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+            <div class="bg-white w-full h-full w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/ae99cd49-2667-464e-b9db-b39cee0126e1 1.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white  w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 51.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white  w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 67.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 50.png" alt="" class="w-40 h-8 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 51.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 50.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 55.png" alt="" class="w-40 h-10 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 52.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 52.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/image 54.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/flywire.png" alt="" class="w-40 h-8 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/quovo_logo.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/Vector.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/nota_bene_logo 1.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/Recurly_Logo_Purple 1.png" alt=" " class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/Group 169.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/kensho-social-card 2.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/e92716bf-074b-46c2-bfdc-82dbfae1da06 2.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-10">
+                <img src="./images/protfolio-companis-img/argyle-black-l 2.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+            <div class="bg-white   w-full h-full rounded-md px-1 py-8">
+                <img src="./images/protfolio-companis-img/ss-logo-2color-black 1.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+
+        </div>
+    </section>
 
 
 
 
-    <!-- js script  -->
 
 
 
+
+
+
+
+    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
