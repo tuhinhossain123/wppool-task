@@ -17,43 +17,52 @@
 
 </head>
 
-<body class="bg-[#F5F5F5] ">
-    <header class="text-white bg-[#2042B6]  ">
-        <!-- nav Section -->
-        <nav class="flex items-center justify-between py-4 px-6 md:px-16">
-            <div>
-                <img src="./images/logo.png" alt="Logo">
+<body class="bg-[#F5F5F5] max-w-full mx-auto ">
+    <!-- heder starts here -->
+    <header class="text-white bg-[#2042B6]  lg:px-10 ">
+        <!-- nav-bar starts from here -->
+        <nav class="flex items-center justify-between p-6">
+            <div class="left logo">
+                <div class="w-3/4">
+                    <img src="./images/logo.png" alt="WPPOOL's logo" class="w-full h-full">
+                </div>
             </div>
-            <div id="menu-container" class="flex items-center gap-6">
-                <div class="hidden md:block">
-                    <button class="h-14 w-14 p-2 border rounded-full text-2xl"><i
-                            class="fa-solid fa-share-nodes"></i></button>
-                </div>
-                <div class="hidden md:block">
-                    <button id="download-report" class="px-4 py-2 border rounded-full">Download the 2024 Report</button>
-                </div>
-                <div>
-                    <button id="menu-toggle" class="text-4xl"><i class="fa-solid fa-bars"></i></button>
-                    <div id="menu-items-parent"
-                        class="menu-items hidden absolute top-12 md:top-[3.5rem] right-0 border border-black bg-white w-full ">
-                        <ul class="w-[20%]">
-                            <li><a href="#">Items-1</a></li>
-                            <li><a href="#">Items-1</a></li>
-                            <li><a href="#">Items-1</a></li>
-                            <li><a href="#">Items-1</a></li>
-                            <li><a href="#">Items-1</a></li>
-                        </ul>
+            <div class="right flex items-center gap-5 relative">
+                <button class="h-14 w-14 p-2 border rounded-full text-2xl"><i
+                        class="fa-solid fa-share-nodes"></i></button>
+                <button class="hidden md:block pr-6 border px-5 py-2 text-white rounded-full">Download the 2024
+                    Report</button>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </button>
+                <div id="menu-items-parent"
+                    class="menu-items hidden absolute top-16 md:top-[0rem] right-0 bg-white shadow-lg rounded-lg p-5 w-[90vw] md:w-[25rem] text-black z-50 ">
+                    <div class="flex items-center md:justify-between  gap-4 ">
+                        <button class="h-14 w-14 p-2 border rounded-full text-2xl  "><i
+                                class="fa-solid fa-share-nodes"></i></button>
+                        <button class="text-white px-4 py-1 bg-[#2042B6] rounded-full">Download the 2024 Report</button>
+                        <button id="menu-close"
+                            class="text-black border border-black cursor-pointer rounded-full  px-4 py-2  w-fit bg-blak ">X</button>
                     </div>
+                    <ul class="text-black mt-5  text-sm ">
+                        <li class="py-1"><a href="#" class="hover:underline">The WPPOOL Index</a></li>
+                        <li class="py-1"><a href="#" class="hover:underline">All Companies</a></li>
+                        <li class="py-1"><a href="#" class="hover:underline">Potential Future Listings</a></li>
+                        <li class="py-1"><a href="#" class="hover:underline">State of USA</a></li>
+                        <li class="py-1"><a href="#" class="hover:underline">Stories & Ideas</a></li>
+                        <li class="py-1"><a href="#" class="hover:underline">About WPPOOL</a></li>
+                        <li class="py-1"><a href="#" class="hover:underline">WPPOOL Portfolio Companies</a></li>
+                        <li class="py-1"><a href="#" class="text-[#2042B6] hover:underline">Visit WPPOOL</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
-
-        <!-- Bnnar Section -->
-
-        <div class="flex flex-col lg:flex-row h-screen relative">
+        <!-- Bnnar Starts From here -->
+        <div class="flex flex-col lg:flex-row items-center h-[90vh] pt-0 md:pt-48 lg:pt-0 relative"
+            style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url('./images/Frame\ 122.pn'); background-repeat: no-repeat; background-position: center; background-size: contain; ">
             <div
-                class="grid grid-cols-2 md:grid-cols-1 gap-6 lg:gap-0 lg:space-y-8 pt-10 md:pt-16 lg:pt-24 pl-12 pb-8 lg:pb-16">
+                class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-1 gap-5 md:gap-3 lg:gap-0 lg:space-y-14 pt-10 md:pt-16 lg:pt-36 pl-12">
                 <div>
                     <h2 class="text-4xl font-normal pb-1">60</h2>
                     <h3 class="text-lg text-[#CDCDCD]">Companies</h3>
@@ -71,103 +80,109 @@
                     <h3 class="text-lg text-[#CDCDCD]">LTM avg. revenue growth rate</h3>
                 </div>
             </div>
-            <div class="px-6 md:px-10 lg:px-0">
-                <h1 class="text-center text-4xl md:text-6xl lg:text-7xl font-normal font-[foppins]   lg:pt-56 pb-4">The
+            <div class="px-6 md:px-10 lg:px-0 lg:ml-[15rem] pt-8 md:pt-16">
+                <h1 class="lg:text-center text-4xl md:text-7xl font-normal font-[foppins] text-justify pb-3">The
                     WPPOOL Index</h1>
-                <h3 class="text-xl font-normal text-center text-justify ">Monitor the performance of emerging, publicly
+                <h3 class="text-xl  font-normal text-center text-justify ">Monitor the performance of emerging, publicly
                     traded, financial
-                    technology companies.Monitor the performance of emerging, publicly traded, financial
-                    technology companies</h3>
+                    technology companies.</h3>
             </div>
         </div>
-        <!-- <div class="absolute ml-[50rem]  bottom-0">
+        <div class="absolute ml-[18rem] md:ml-[40rem] lg:ml-[107rem] mb:[4rem] md:mb-[5rem] lg:mb-[4rem]  bottom-0 ">
             <button
                 class="bg-white text-[#2042B6] h-16 w-16 p-3 text-normal text-2xl rounded-full shadow-2xl 2xl shadow-gray-500">
-                <i class="fa-solid fa-arrow-right-long"></i>
-            </button> -->
+                <i class="fa-solid fa-arrow-down"></i>
+            </button>
         </div>
     </header>
 
 
-    <!-- The WPPOOL Index Section -->
-    <section class="mt-16 px-16 py-10 bg-[#FFFFFF]">
-        <div class="flex gap-6">
-            <div class="w-[20%] mx-auto bg-[#EFF3F6] rounded-xl p-4 space-y-6">
-                <div class="bg-[#2042B6] text-white text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+    <!-- The WPPOOL Index Section  Starts From here here-->
+    <section class="mt-16 px-4 lg:px-16 py-10 bg-[#FFFFFF]">
+        <div class="flex flex-col lg:flex-row gap-6">
+            <div class="lg:w-[20%] lg:mx-auto bg-[#EFF3F6] rounded-xl p-4 space-y-6">
+                <div
+                    class="bg-[#2042B6] text-white text-lg md:text-xl flex justify-between items-center px-4 py-2  rounded-md">
                     <h2>The Index</h2>
                     <span>-</span>
                 </div>
-                <div class="text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                <div class="text-[#647888] text-lg md:text-xl flex justify-between items-center px-4 py-2 rounded-md">
                     <h2>The Index Tab Tow</h2>
                     <span>+</span>
                 </div>
-                <div class="text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                <div class="text-[#647888] text-lg md:text-xl flex justify-between items-center px-4 py-2 rounded-md">
                     <h2>The Index Tab Three</h2>
                     <span>+</span>
                 </div>
-                <div class=" text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                <div class=" text-[#647888] text-lg md:text-xl flex justify-between items-center px-4 py-2  rounded-md">
                     <h2>The Index Tab Four</h2>
                     <span>+</span>
                 </div>
-                <div class="text-[#647888] text-lg flex justify-between items-center px-4 py-2 w-full h-full rounded-md">
+                <div class="text-[#647888] text-lg md:text-xl flex justify-between items-center px-4 py-2  rounded-md">
                     <h2>The Index Tab Five</h2>
                     <span>+</span>
                 </div>
             </div>
-            <div class="w-[80%] mx-auto">
+            <div class="lg:w-[80%] mx-auto pt-5 lg:pt-4">
                 <div class="flex items-center gap-2">
                     <div class="w-12 h-10">
                         <img src="./images/The-index-img/Union.png" alt="">
                     </div>
                     <div>
-                        <h2 class="text-2xl md:text-4xl font-[foppins]">The WPPOOL Index</h2>
+                        <h2 class="text-3xl md:text-6xl font-[foppins]">The WPPOOL Index</h2>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-4">
-                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-5 lg:pt-5">
+                    <div
+                        class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
                         <h2 class="text-[#FC714D] text-3xl">+66.2%</h2>
-                        <div class="flex  lg:gap-2">
+                        <div class="flex items-center gap-4 lg:gap-2">
                             <h3 class="text-[#191618] text-lg">WPPOOL</h3>
                             <hr class="w-1 h-14 lg:h-8 bg-[#FC714D]">
                         </div>
                     </div>
-                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                    <div
+                        class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
                         <h2 class="text-[#615DE3] text-3xl">+26.6%</h2>
-                        <div class="flex  lg:gap-2">
+                        <div class="flex  items-center gap-4 lg:gap-2">
                             <h3 class="text-[#191618] text-lg">Goolge</h3>
                             <hr class="w-1 h-14 lg:h-8 bg-[#615DE3]">
                         </div>
                     </div>
-                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                    <div
+                        class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
                         <h2 class="text-[#7CA63A] text-3xl">+31.1%</h2>
-                        <div class="flex items-center gap-2 lg:gap-2">
+                        <div class="flex items-center gap-4 lg:gap-2">
                             <h3 class="text-[#191618] text-lg">Microsoft</h3>
                             <hr class="w-1 h-14 lg:h-8 bg-[#7CA63A]">
                         </div>
                     </div>
-                    <div class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
+                    <div
+                        class="flex justify-between items-center gap-4 lg:gap-24 bg-[#F3F3F3] w-full h-full rounded-md p-4">
                         <h2 class="text-[#6F34A1] text-3xl">+17%</h2>
-                        <div class="flex items-center gap-1 lg:gap-2">
+                        <div class="flex items-center gap-4 lg:gap-2">
                             <h3 class="text-[#191618] text-lg">Twitter Index</h3>
                             <hr class="w-1 h-14 lg:h-8 bg-[#6F34A1]">
                         </div>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-96 pt-8 md:pt-5">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div
+                    class="flex flex-col lg:flex-row justify-between items-center gap-8  md:gap-10 lg:gap-96 pt-8 md:pt-8 lg:pt-5">
+                    <div class="flex items-center items-center w-full gap-1 md:gap-5 lg:gap-3">
                         <div
-                            class="bg-[#2042B6] text-white text-lg flex justify-between gap-24 items-center px-4 py-2 rounded-full">
+                            class="bg-[#2042B6] w-full text-white text-lg flex justify-between gap-14  lg:gap-24 items-center px-4 py-2 md:py-6 lg:py-2 rounded-full">
                             <h2>Sectors</h2>
                             <span><i class="fa-solid fa-caret-down"></i></span>
                         </div>
                         <div
-                            class="bg-[#2042B6] text-white text-lg flex justify-between gap-24 items-center px-4 py-2 rounded-full">
+                            class="bg-[#2042B6] w-full text-white text-lg flex justify-between gap-12 lg:gap-24 items-center px-4 py-2 md:py-6 lg:py-2  rounded-full">
                             <h2 class="text-sm">Types of IPO</h2>
                             <span><i class="fa-solid fa-caret-down"></i></span>
                         </div>
                     </div>
-                    <div class="  gap-5  bg-[#EFF3F6] rounded-full mt-3 md:mt-0 py-2">
+                    <div
+                        class="flex justify-center items-center gap-8  bg-[#EFF3F6] rounded-full w-full mt-1 lg:mt-1 md:mt-0 px-2 lg:px-6 py-3">
                         <h2 class="text-[#748DA1]">1Y</h2>
                         <h2 class="text-[#748DA1]">YTD</h2>
                         <h2 class="bg-[#2042B6] p-3 text-white rounded-full">6M</h2>
@@ -178,7 +193,7 @@
                 <div class="pt-6">
                     <img src="./images/The-index-img/Frame 127.png" alt="" class="w-full h-full">
                 </div>
-                <div class="  gap-16 pt-6">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-8  lg:gap-16 pt-6">
                     <div class="flex items-center gap-3">
                         <div class="flex items-center gap-2">
                             <h2 class="border border-2 outline-none  bg-[#FC714D] w-4 h-4"></h2>
@@ -206,8 +221,8 @@
     </section>
 
 
-    <!-- Potential Future Listings Section -->
-    <section class="px-5 md:px-10 lg:px-16 mt-36">
+    <!-- Potential Future Listings Section  Starts from here-->
+    <section class="px-4 md:px-10 lg:px-16 mt-36">
         <div>
             <h2 class="text-5xl font-normal font-[foppins] pb-5">Potential Future Listings</h2>
             <p class="text-[#191618]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
@@ -241,17 +256,17 @@
                 <div class="bg-white  py-5 w-full h-full rounded-md flex justify-center">
                     <img src="./images/potential-feature/Group 225.png" alt="" class="w-[8rem] h-[3rem]">
                 </div>
-                <div class="bg-white py-5  w-full h-full rounded-md  ">
+                <div class="bg-white py-5  w-full h-full rounded-md  flex justify-center">
                     <img src="./images/potential-feature/Group.png" alt="" class="w-[6rem] h-[3rem]">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- State of USA Section -->
-    <section class="px-16 mt-36">
+    <!-- State of USA Section Starts from here -->
+    <section class="px-6 md:px-10 lg:px-16 mt-24">
         <div>
-            <h2 class="text-5xl font-normal font-[foppins] pb-5">State of USA</h2>
+            <h2 class="text-4xl md:text-5xl font-normal font-[foppins] pb-5">State of USA</h2>
             <button class="flex items-center bg-[#2042B6] rounded-full px-6 py-3 gap-10">
                 <span class="text-5xl font-normal text-white font-[foppins]">2024</span>
                 </span> <i class="fa-solid fa-caret-down text-white  text-xl"></i>
@@ -262,42 +277,109 @@
         <div class=" flex items-center justify-center pt-5">
             <div class="w-full h-full">
                 <div id="slider" class="overflow-hidden w-full h-full rounded-lg">
-                    <div class="flex transition-transform duration-500">
-                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rgegdg (1).png"
-                                alt="Slide 1"></div>
-                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rhrdgd.png"
-                                alt="Slide 2"></div>
-                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rgegdg (1).png"
-                                alt="Slide 1"></div>
-                        <div class="w-full h-full flex-shrink-0"><img src="/images/slider image/rhrdgd.png"
-                                alt="Slide 2"></div>
+                    <div class="flex transition-transform duration-500 gap-4">
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rgegdg (1).png" alt="Slide 1"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+                        <div class=" h-full flex-shrink-0"><img class="md:h-[540px] h-[300px]"
+                                src="/images/slider image/rhrdgd.png" alt="Slide 2"></div>
+
 
                     </div>
                 </div>
 
-                <div class="flex items-center gap-x-[470px]">
-                    <div class="flex items-center pt-5 gap-10">
+                <div class="flex  items-center gap-x-[470px]">
+                    <div class="flex items-center pt-8 gap-4 lg:gap-10">
                         <div class="flex items-center gap-5">
                             <button id="prevBtn"
-                                class="bg-white text-[#2042B6] h-16 w-16 p-3 text-normal text-2xl rounded-full shadow-2xl 2xl shadow-gray-500">
+                                class="bg-white text-[#2042B6] lg:h-16 lg:w-16 p-3 text-normal text-2xl rounded-full shadow-2xl text-lg lg:text-2xl shadow-gray-500">
                                 <i class="fa-solid fa-arrow-left-long"></i>
                             </button>
                             <button id="nextBtn"
-                                class="bg-white text-[#2042B6] h-16 w-16 p-3 text-normal text-2xl rounded-full shadow-2xl 2xl shadow-gray-500">
+                                class="bg-white text-[#2042B6] lg:h-16 lg:w-16 p-3 text-normal text-2xl rounded-full shadow-2xl text-lg  lg:text-2xl shadow-gray-500">
                                 <i class="fa-solid fa-arrow-right-long"></i>
                             </button>
                         </div>
                         <div class="flex items-center gap-3">
                             <h2 class="text-lg font-normal">Pages</h2>
                             <button id="pageCount"
-                                class="text-black bg-white w-[131px] h-[56px] text-center text-lg shadow-2xl shadow-gray-500 rounded-full px-3 py-2">
-                                <span> 1 / 4</span> <span><i
+                                class="text-black bg-white w-[80px] lg:w-[131px] h-[56px] text-center text-lg shadow-2xl shadow-gray-500 rounded-full lg:px-3 lg:py-2">
+                                <span> 1 / 37</span> <span><i
                                         class="fa-solid fa-caret-down text-[#2042B6] text-5xl"></i></span>
                             </button>
                             <h2 class="text-lg font-normal">of 37</h2>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="pt-8 hidden lg:block">
                         <button id="download-report"
                             class="px-5 py-5 border-none bg-[#2042B6] text-white shadow-2xl shadow-gray-500 rounded-full">Download
                             the 2024 Report</button>
@@ -310,12 +392,12 @@
     </section>
 
 
-    <!-- Stories & Ideas Section -->
-    <section class="mt-48">
-        <div class="px-5 md:px-10 lg:px-16">
-            <h2 class="text-5xl font-normal font-[foppins] pb-5">State of USA</h2>
+    <!-- Stories & Ideas Section Sectios starts from here -->
+    <section class="px-6 md:px-10 lg:px-16 mt-24">
+        <div class="">
+            <h2 class="text-5xl font-normal font-[foppins] pb-5">Stories & Ideas</h2>
             <p class="text-[#191618] text-xl pb-12">The latest news and updates</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-[46px]">
+            <div class="grid grid-cols-1  lg:grid-cols-3 gap-10 pt-[40px]">
                 <div class="">
                     <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
                         <div class="w-32 h-32 rounded-full">
@@ -382,12 +464,12 @@
                     </div>
                 </div>
                 <div class="pt-10">
-                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5 ">
+                    <div class="avatar absolute  -mt-10 ml-6 lg:ml-5">
                         <div class="w-32 h-32 rounded-full">
                             <img src="/images/story-ide/image 98.png" alt="">
                         </div>
                     </div>
-                    <div class="bg-white  pt-20 px-7 pb-25 pointer   rounded-lg">
+                    <div class="bg-white  pt-20 px-7 pb-5 pointer  rounded-lg">
                         <h2 class="pb-2 text-[#2042B6]">By: Nayem Khan</h2>
                         <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.Lorem
                             ipsum dolor sit amet consectetur.</p>
@@ -400,15 +482,16 @@
     </section>
 
     <!-- hr -->
-    <hr class="mt-24 mb-24 mb-10 w-[93%] h-[0.2rem] mx-auto text-5xl bg-[#90B8F0] ">
+    <hr class="mt-10 lg:mt-24 lg:mb-24 mb-10 w-[85%] lg:w-[93%] h-[0.2rem] mx-auto text-5xl bg-[#90B8F0]">
 
 
-    <!-- About WPPOOL Dection -->
+    <!-- About WPPOOL Dection Sectios Starts from here -->
 
-    <section class="px-16">
-        <div class="flex justify-between items-center bg-white w-full h-full rounded-md shadow-lg">
+    <section class="px-6 md:px-10 lg:px-16 ">
+        <div
+            class="flex flex-col-reverse lg:flex-row justify-between items-center bg-white w-full h-full rounded-md shadow-lg">
             <div class="pt-10 pl-10 pb-10">
-                <h2 class="text-5xl text-[#191618] font-[foppins] pb-5">
+                <h2 class="text-4xl lg:text-5xl text-[#191618] font-[foppins] pb-5">
                     About WPPOOL
                 </h2>
                 <h3 class="text-3xl text-[#7D7F81] pb-4">Investing in wppool for over 50 years</h3>
@@ -420,23 +503,23 @@
                 </p>
                 <button class="btn bg-[#2042B6] px-4 py-3 rounded-full text-white">Contact WPPOOL</button>
             </div>
-            <div>
+            <div class="lg:w-[50%]">
                 <img src="./images/Mask group.svg" alt="" class="w-full h-full">
             </div>
         </div>
     </section>
 
     <!-- hr  -->
-    <hr class="mt-24 mb-24 mb-10 w-[93%] h-[0.2rem] mx-auto text-5xl bg-[#90B8F0] ">
+    <hr class="mt-10 lg:mt-24 lg:mb-24 mb-10 w-[85%] lg:w-[93%] h-[0.2rem] mx-auto text-5xl bg-[#90B8F0]">
 
 
-    <!-- Selected WPPOOL Portfolio Companies Section -->
-    <section class="px-16">
-
-        <h2 class="text-5xl font-normal font-[foppins] pb-5">Selected WPPOOL Portfolio Companies</h2>
+    <!-- Selected WPPOOL Portfolio Companies Section Starts from here -->
+    <section class="px-6 md:px-10 lg:px-16">
+        <h2 class="text-4xl md:text-5xl font-normal font-[foppins] pb-5 md:pb-8 lg:pb-5">Selected WPPOOL Portfolio Companies</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             <div class="bg-white w-full h-full w-full h-full rounded-md px-1 py-10">
-                <img src="./images/protfolio-companis-img/ae99cd49-2667-464e-b9db-b39cee0126e1 1.png" alt="" class="w-40 h-6 mx-auto">
+                <img src="./images/protfolio-companis-img/ae99cd49-2667-464e-b9db-b39cee0126e1 1.png" alt=""
+                    class="w-40 h-6 mx-auto">
             </div>
             <div class="bg-white  w-full h-full rounded-md px-1 py-10">
                 <img src="./images/protfolio-companis-img/image 51.png" alt="" class="w-40 h-6 mx-auto">
@@ -488,13 +571,74 @@
                 <img src="./images/protfolio-companis-img/kensho-social-card 2.png" alt="" class="w-40 h-6 mx-auto">
             </div>
             <div class="bg-white   w-full h-full rounded-md px-1 py-10">
-                <img src="./images/protfolio-companis-img/e92716bf-074b-46c2-bfdc-82dbfae1da06 2.png" alt="" class="w-40 h-6 mx-auto">
+                <img src="./images/protfolio-companis-img/e92716bf-074b-46c2-bfdc-82dbfae1da06 2.png" alt=""
+                    class="w-40 h-6 mx-auto">
             </div>
             <div class="bg-white   w-full h-full rounded-md px-1 py-10">
                 <img src="./images/protfolio-companis-img/argyle-black-l 2.png" alt="" class="w-40 h-6 mx-auto">
             </div>
             <div class="bg-white   w-full h-full rounded-md px-1 py-8">
                 <img src="./images/protfolio-companis-img/ss-logo-2color-black 1.png" alt="" class="w-40 h-6 mx-auto">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer section Starts From here -->
+
+    <section class="px-6 md:px-10 lg:px-16 mt-24">
+        <div class="flex flex-col-reverse lg:flex-row justify-around bg-[#E6E6E6] py-16 space-y-8 lg:space-y-0  rounded-md px-6">
+            <div class="pt-4 md:pt-8 lg:pt-0">
+                <h2 class="text-4xl  font-normal text-[#000] pb-10 lg:pb-64">Experience remarkable <br>
+                    WordPress products with a <br>
+                    new level of power, beauty,<br>
+                    and human-centered designs.</h2>
+               <div class="flex flex-col-reverse lg:flex-col">
+                <h3 class="text-[#9FA0A1] pt-8 lg:pt-0 text-lg pb-5">©2024 Terms of Use Privacy Policy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,<br>molestiae quas vel sint
+                    commodi repudiandae consequuntur voluptatum <br> laborum numquam blanditiis harum quisquam eius sed odit
+                    fugiat iusto fuga <br> praesentium optio, eaque rerum! Provident similique accusantium nemo <br>
+                    Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate <br> aliquam nihil, eveniet
+                    aliquid culpa officia aut! Impedit sit sunt quaera </p>
+               </div>
+            </div>
+           
+            <div >
+                <h2 class="text-[#9FA0A1] text-xl pb-4">Jump to</h2>
+                <div class="space-y-3 text-[#115CD9] flex flex-col">
+                    <a href="">About Us</a>
+                    <a href="">Portfolio</a>
+                    <a href="">News</a>
+                    <a href="">Stories</a>
+                    <a href="">Jobs</a>
+                    <a href="">About Us</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2 class="text-xl font-bold pb-2">Cambridge</h2>
+                    <p>70728 Yost Burg,
+                        North Magdaleneview,
+                        UT 97952-2814</p>
+                </div>
+                <hr class="mt-4 lg:mt-8 lg:mb-8 mb-4 w-[85%] lg:w-[90%] h-[0.2rem]  bg-[#9FA0A1]">
+                <div>
+                    <h2 class="text-xl font-bold pb-2">London</h2>
+                    <p>Suite 292 903 Stehr Streets, 
+                        Langworthtown, SC 94577-9465</p>
+                </div>
+                <hr class="mt-4 lg:mt-8 lg:mb-8 mb-4 w-[85%] lg:w-[90%] h-[0.2rem]  bg-[#9FA0A1]">
+                <div>
+                    <h2 class="text-xl font-bold pb-2">San Francisco</h2>
+                    <p>19837 Gilberto Lodge, 
+                        Lake Kendallville, 
+                        Colorado - 97392, Bhutan</p>
+                </div>
+                <hr class="mt-4 lg:mt-8 lg:mb-8 mb-4 w-[85%] lg:w-[90%] h-[0.2rem]  bg-[#9FA0A1]">
+                <div class="flex items-center gap-8">
+                   <a href="" class="text-[#9FA0A1] text-3xl"> <i class="fa-brands fa-linkedin "></i></a>
+                    <a href="" class="text-[#9FA0A1] text-3xl"><i class="fa-brands fa-twitter"></i></a>
+                </div>
             </div>
 
         </div>
