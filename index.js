@@ -13,3 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
       menuToggle.classList.remove("active");
     });
   });
+
+
+
+// 
+
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('bg-scroll', 'text-white');
+        navbar.classList.remove('bg-transparent', 'text-black');
+    } else {
+        navbar.classList.add('bg-transparent', 'text-black');
+        navbar.classList.remove('bg-scroll', 'text-white');
+    }
+});
